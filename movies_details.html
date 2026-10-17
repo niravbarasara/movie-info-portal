@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <script>
+        function addToFavourite() {
+            alert("Movie added to favourites!");
+        }
+    </script>
+
+    <header>
+        <h1>Movie Information Portal</h1>
+
+        <nav>
+           <a href="index.html">Home</a> |
+            <a href="movies.html">Movies</a> |
+            <a href="movies_details.html">Movie Details</a> |
+            <a href="favourites.html">Favourites</a> |
+            <a href="reviews_rating.html">Reviews&Ratings</a> |
+            <a href="contact.html">Contacts</a>
+        </nav>
+    </header>
+
+    <main class="movie-details">
+
+        
+        <div class="movie-info">
+            <div class="movie-poster">
+                <img src="assets/inception.jfif" alt="Inception">
+            </div>
+            <h2>Inception</h2>
+
+            <p><strong>Genre:</strong> Sci-Fi, Thriller</p>
+            <p><strong>Release Date:</strong> 16 July 2010</p>
+            <p><strong>Rating:</strong> 8.8/10</p>
+            <p><strong>Duration:</strong> 2h 28min</p>
+
+            <h3>About the Movie</h3>
+
+            <p>
+                Inception is a science-fiction thriller about a skilled thief
+                who enters people's dreams to steal information. He is given
+                a difficult task that involves planting an idea inside
+                someone's mind.
+            </p>
+
+            <h3>Cast</h3>
+            <p>Leonardo DiCaprio, Joseph Gordon-Levitt, Tom Hardy</p>
+
+            <button onclick="addToFavourite()">
+                 Add to Favourites
+            </button>
+        </div>
+
+    </main>
+
+</body>
+</html>

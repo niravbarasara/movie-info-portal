@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourites</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <script>
+        function removeFavourite(button) {
+            button.parentElement.remove();
+        }
+    </script>
+
+    <header>
+        <h1>Movie Information Portal</h1>
+
+        <nav>
+           <a href="index.html">Home</a> |
+            <a href="movies.html">Movies</a> |
+            <a href="movies_details.html">Movie Details</a> |
+            <a href="favourites.html">Favourites</a> |
+            <a href="reviews_rating.html">Reviews&Ratings</a> |
+            <a href="contact.html">Contacts</a>
+        </nav>
+    </header>
+
+    <main class="favourites-page">
+
+        <h2>My Favourite Movies</h2>
+
+        <div class="movie-container">
+
+            <div class="movie-card">
+                <img src="assets/inception.jfif" alt="poster">
+
+                <h3>Inception</h3>
+
+                <p> 8.8/10</p>
+                <p>Sci-Fi, Thriller</p>
+
+                <a href="movies_details.html">View Details</a>
+
+                <button onclick="removeFavourite(this)">
+                    Remove
+                </button>
+            </div>
+
+            <div class="movie-card">
+                <img src="assets/Interstellar.jfif" alt="Poster">
+
+                <h3>Interstellar</h3>
+
+                <p>8.7/10</p>
+                <p>Sci-Fi, Drama</p>
+
+                <a href="movies_details.html">View Details</a>
+
+                <button onclick="removeFavourite(this)">
+                    Remove
+                </button>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+</html>

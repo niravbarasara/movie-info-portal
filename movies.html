@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+        <header>
+       <h1>Movie Information Portal</h1>
+       <nav>
+           <a href="index.html">Home</a> |
+            <a href="movies.html">Movies</a> |
+            <a href="movies_details.html">Movie Details</a> |
+            <a href="favourites.html">Favourites</a> |
+            <a href="reviews_rating.html">Reviews&Ratings</a> |
+            <a href="contact.html">Contacts</a>
+       </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Search&Filter</h2>
+            <form>
+                <label>Movie title:</label>
+                <input type="search" placeholder="search movie">
+
+                <label>Genre:</label>
+                <select name="genre" id="genre">
+                    <option value>All Genres</option>
+                    <option>Action</option>
+                    <option>Comedy</option>
+                    <option>Sci-Fi`</option>
+                    <option>Drama</option>
+                    <option>Thriller</option>
+                </select>
+                <button type="submit">Apply</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+        <section>
+            <h2>Movies</h2>
+            <article>
+                <h3>The Dark Knight</h3>
+                <div class="poster">
+                    <img class="poster-img" class="poster-img" src="assets/darknight.jpg" alt="poster">
+                </div>  
+                  <p>Description:The Dark Knight is a 2008 superhero film directed by Christopher Nolan that follows Batman as he fights a chaotic criminal mastermind known as the Joker.</p>
+                <p>Genre: Action,superhero,thriller <br> Realse Date:July 18,2008 <br> Rating:9/10</p>
+                <hr>
+            </article>
+            <article>
+                <h3>Avengers: Endgame</h3>
+                <div class="poster">
+                        <img class="poster-img" src="assets/endgame.jpg" alt="Poster">
+                </div>
+                <p>Description:Avengers: Endgame is a 2019 epic superhero film directed by Anthony and Joe Russo that serves as the massive culmination to the first decade of the Marvel Cinematic Universe (MCU).</p>
+                <p>Genre: Action, superhero, sci-fi <br> Release Date: April 26, 2019 <br> Rating: 8.4/10</p>
+                <hr>
+            </article>
+            <article>
+                <h3>Interstellar</h3>
+                <div class="poster">
+                        <img class="poster-img" src="assets/Interstellar.jfif" alt="Poster">
+                </div>
+                <p>Description:Interstellar is a 2014 epic science fiction film directed by Christopher Nolan that follows a team of explorers traveling through a wormhole in space to find a new home for humanity.</p>
+                <p>Genre: Epic sci-fi, drama <br> Release Date: October 26, 2014 <br> Rating: 8.7/10</p>
+                <hr>
+            </article>
+            <article>
+                <h3>Spider-Man: Brand New Day</h3>
+                <div class="poster">
+                        <img class="poster-img" src="assets/spiderman_bnd.jpg" alt="Poster">
+                </div>
+                <p>Description: Four years after being erased from global memory, Peter Parker dedicates himself entirely to protecting New York City as a full-time Spider-Man, but intense personal pressure triggers a dangerous physical evolution just as a powerful, unseen telepathic threat emerges..</p>
+                <p>Genre: Action, superhero, sci-fi <br> Release Date: July 31, 2026 <br> Rating: 7.9/10</p>
+            </article>
+        </section>
+    </main>
+        <footer>
+        <hr>
+        <p>©Movie Information Portal</p>
+    </footer>
+</body>
+</html>
