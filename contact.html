@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse movie information, ratings, favourites and reviews."
+    />
+    <title>Contact | Movie Information Portal</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body data-page="contact">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html"
+          ><span class="logo-text">🎬 Movie Information Portal</span></a
+        >
+        <nav class="main-nav">
+          <a href="index.html">Home</a><a href="movies.html">Movies</a
+          ><a href="movies_details.html">Movie Details</a
+          ><a href="favourites.html">Favourites</a
+          ><a href="reviews_rating.html">Reviews &amp; Ratings</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="section-heading">
+        <h2>Contact &amp; Feedback</h2>
+      </div>
+      <section>
+        <p>Have a suggestion, question or feedback? Send us a message.</p>
+        <form id="contact-form">
+          <fieldset>
+            <legend>Contact Form</legend>
+            <div class="form-group">
+              <label for="contact-name">Name</label
+              ><input
+                id="contact-name"
+                required
+                minlength="2"
+                maxlength="80"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label
+              ><input
+                id="contact-email"
+                type="email"
+                required
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label
+              ><select id="contact-subject">
+                <option>General question</option>
+                <option>Feedback</option>
+                <option>Report an issue</option>
+                <option>Request a movie</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label
+              ><textarea
+                id="contact-message"
+                required
+                minlength="10"
+                maxlength="2000"
+                placeholder="Enter your message..."
+              ></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary">Submit</button
+              ><button class="btn btn-secondary" type="reset">Reset</button>
+            </div>
+            <p id="form-status" class="form-status" role="status"></p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-brand">Movie Information Portal</p>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a><a href="movies.html">Movies</a
+          ><a href="favourites.html">Favourites</a
+          ><a href="reviews_rating.html">Reviews</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+        <p class="footer-copy">
+          &copy; 2026 Movie Information Portal. Educational demo project.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="movies.js"></script>
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+  </body>
+</html>

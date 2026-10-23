@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse movie information, ratings, favourites and reviews."
+    />
+    <title>Movies | Movie Information Portal</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body data-page="movies">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html"
+          ><span class="logo-text">🎬 Movie Information Portal</span></a
+        >
+        <nav class="main-nav">
+          <a href="index.html">Home</a><a href="movies.html">Movies</a
+          ><a href="movies_details.html">Movie Details</a
+          ><a href="favourites.html">Favourites</a
+          ><a href="reviews_rating.html">Reviews &amp; Ratings</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h2>Search &amp; Filter Movies</h2>
+        <div class="filter-form">
+          <div class="form-group">
+            <label for="search-title">Movie title</label
+            ><input
+              id="search-title"
+              type="search"
+              placeholder="Search by title"
+            />
+          </div>
+          <div class="form-group">
+            <label for="genre-filter">Genre</label
+            ><select id="genre-filter">
+              <option value="all">All genres</option>
+              <option>Action</option>
+              <option>Comedy</option>
+              <option>Sci-Fi</option>
+              <option>Drama</option>
+              <option>Thriller</option>
+              <option>Adventure</option>
+              <option>Romance</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="language-filter">Language</label>
+            <select id="language-filter">
+              <option value="all">All languages</option>
+              <option>English</option>
+              <option>Hindi</option>
+              <option>Telugu</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="year-filter">Year</label>
+            <select id="year-filter">
+              <option value="all">All years</option>
+              <option value="2026">2026</option>
+              <option value="2022">2022</option>
+              <option value="2019">2019</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2003">2003</option>
+              <option value="1997">1997</option>
+              <option value="1993">1993</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="rating-filter">Minimum rating</label>
+            <select id="rating-filter">
+              <option value="0">Any rating</option>
+              <option value="7">7+/10</option>
+              <option value="8">8+/10</option>
+              <option value="8.5">8.5+/10</option>
+              <option value="9">9+/10</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="sort-filter">Sort by</label
+            ><select id="sort-filter">
+              <option value="default">Default</option>
+              <option value="title">Title (A–Z)</option>
+              <option value="rating">Highest rating</option>
+              <option value="year">Newest year</option>
+            </select>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-secondary" id="reset-filters" type="button">
+              Reset
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="section-heading">
+          <h2>All Movies</h2>
+          <p id="movie-count"></p>
+        </div>
+        <div id="movie-grid" class="movie-grid"></div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-brand">Movie Information Portal</p>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a><a href="movies.html">Movies</a
+          ><a href="favourites.html">Favourites</a
+          ><a href="reviews_rating.html">Reviews</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+        <p class="footer-copy">
+          &copy; 2026 Movie Information Portal. Educational demo project.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="movies.js"></script>
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse movie information, ratings, favourites and reviews."
+    />
+    <title>Home | Movie Information Portal</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html"
+          ><span class="logo-text">🎬 Movie Information Portal</span></a
+        >
+        <nav class="main-nav">
+          <a href="index.html">Home</a><a href="movies.html">Movies</a
+          ><a href="movies_details.html">Movie Details</a
+          ><a href="favourites.html">Favourites</a
+          ><a href="reviews_rating.html">Reviews &amp; Ratings</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h2 class="hero-title">Discover Your Next Favourite Movie</h2>
+        <p class="hero-text">
+          Browse movie details, explore genres, save favourites and share your
+          reviews.
+        </p>
+        <form class="search-form" data-search-form>
+          <input
+            type="search"
+            placeholder="Search movie titles..."
+            aria-label="Search movie titles"
+          /><button class="btn btn-primary">Search Movies</button>
+        </form>
+        <p>
+          <a class="btn btn-secondary" href="movies.html">Browse All Movies</a>
+        </p>
+      </section>
+      <section>
+        <div class="section-heading">
+          <h2>Featured Movies</h2>
+          <a class="link-more" href="movies.html">View all movies →</a>
+        </div>
+        <div class="movie-grid">
+          <article class="movie-card">
+            <img
+              class="poster-img"
+              src="assets/inception.jfif"
+              alt="Inception poster"
+            />
+            <div class="movie-card-content">
+              <h3>Inception</h3>
+              <p>Sci-Fi, Thriller · 2010</p>
+              <p>★ 8.8/10</p>
+              <a class="btn btn-primary" href="movies_details.html?id=inception"
+                >View Details</a
+              >
+            </div>
+          </article>
+          <article class="movie-card">
+            <img
+              class="poster-img"
+              src="assets/darknight.jpg"
+              alt="The Dark Knight poster"
+            />
+            <div class="movie-card-content">
+              <h3>The Dark Knight</h3>
+              <p>Action, Thriller · 2008</p>
+              <p>★ 9.0/10</p>
+              <a
+                class="btn btn-primary"
+                href="movies_details.html?id=dark-knight"
+                >View Details</a
+              >
+            </div>
+          </article>
+          <article class="movie-card">
+            <img
+              class="poster-img"
+              src="assets/Interstellar.jfif"
+              alt="Interstellar poster"
+            />
+            <div class="movie-card-content">
+              <h3>Interstellar</h3>
+              <p>Sci-Fi, Drama · 2014</p>
+              <p>★ 8.7/10</p>
+              <a
+                class="btn btn-primary"
+                href="movies_details.html?id=interstellar"
+                >View Details</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-brand">Movie Information Portal</p>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a><a href="movies.html">Movies</a
+          ><a href="favourites.html">Favourites</a
+          ><a href="reviews_rating.html">Reviews</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+        <p class="footer-copy">
+          &copy; 2026 Movie Information Portal. Educational demo project.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="movies.js"></script>
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+  </body>
+</html>

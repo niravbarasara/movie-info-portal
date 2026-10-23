@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse movie information, ratings, favourites and reviews."
+    />
+    <title>Reviews & Ratings | Movie Information Portal</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body data-page="reviews">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">
+            <span class="logo-text">🎬 Movie Information Portal</span></a>
+        <nav class="main-nav">
+          <a href="index.html">Home</a><a href="movies.html">Movies</a
+          ><a href="movies_details.html">Movie Details</a
+          ><a href="favourites.html">Favourites</a
+          ><a href="reviews_rating.html">Reviews &amp; Ratings</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="review-layout">
+        <section>
+          <h2>Write a Review</h2>
+          <form id="review-form">
+            <div class="form-group">
+              <label for="reviewer-name">Your name</label
+              ><input
+                id="reviewer-name"
+                required
+                maxlength="60"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="movie-select">Movie</label
+              ><select id="movie-select" required>
+                <option value="">Choose a movie...</option>
+                <option>Inception</option>
+                <option>The Dark Knight</option>
+                <option>Avengers: Endgame</option>
+                <option>Interstellar</option>
+                <option>Spider-Man: Brand New Day</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="rating-input">Rating</label
+              ><select id="rating-input" required>
+                <option value="">Select rating</option>
+                <option value="5">★★★★★ (5/5)</option>
+                <option value="4">★★★★☆ (4/5)</option>
+                <option value="3">★★★☆☆ (3/5)</option>
+                <option value="2">★★☆☆☆ (2/5)</option>
+                <option value="1">★☆☆☆☆ (1/5)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="review-text">Your review</label
+              ><textarea
+                id="review-text"
+                required
+                minlength="5"
+                maxlength="1000"
+                placeholder="Share your thoughts..."
+              ></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary">Submit Review</button
+              ><button class="btn btn-secondary" type="reset">Clear</button>
+            </div>
+          </form>
+        </section>
+        <section>
+          <div class="section-heading">
+            <h2>User Reviews</h2>
+            <p id="review-count">0 reviews</p>
+          </div>
+          <div id="reviews-list"></div>
+          <p id="no-reviews" class="empty-message" hidden>
+            No reviews yet. Be the first to write one!
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-brand">Movie Information Portal</p>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a><a href="movies.html">Movies</a
+          ><a href="favourites.html">Favourites</a
+          ><a href="reviews_rating.html">Reviews</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+        <p class="footer-copy">
+          &copy; 2026 Movie Information Portal. Educational demo project.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="movies.js"></script>
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+  </body>
+</html>
